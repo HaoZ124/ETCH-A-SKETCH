@@ -7,23 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>ETCH-A-SKETCH</title>
-    <style>
-        .container {
-            display: grid;
-            background-color: black;
-        }
-    </style>
 </head>
 
 <body>
     <h1>ETCH-A-SKETCH</h1>
-    <div class="buttons">
-        <input id='userInput' type="range" value="64" min="1" max="64" defaultValue='32'>
-    </div>
-    <div class="container">
+    <div class="content">
 
-    </div>
 
+        <div class="buttons">
+            <button id="black">Black</button>
+            <button id="erase">Erase</button>
+            <button id="random">Random</button>
+            <button id="reset">Reset</button>
+            <div class="size"><input type='number' id="userInput" placeholder="Please enter 2 ~ 64" value="" min="2" max="64" onchange="sizing(this.value)"><button class="setNumber">Set</button></div>
+
+        </div>
+        <div class="container">
+
+        </div>
+    </div>
     <script src="app.js"></script>
 </body>
 

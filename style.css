@@ -1,0 +1,30 @@
+.container {
+    display: grid;
+    width: 800px;
+    height: 800px;
+    border: 2px solid black;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 40px;
+}
+
+#userInput {
+    width: 150px;
+    margin-right: 10px;
+}
+
+button {
+    border-radius: 6px;
+    padding: 4px 16px;
+}
