@@ -15,9 +15,9 @@
 
 
         <div class="buttons">
-            <button id="black">Black</button>
-            <button id="erase">Erase</button>
-            <button id="random">Random</button>
+            <button id="black" onclick="changeColor('black')">Black</button>
+            <button id="erase" onclick="changeColor('white')">Erase</button>
+            <button id="random" onclick="changeColor('random')">Random</button>
             <button id="reset">Reset</button>
             <div class="size"><input type='number' id="userInput" placeholder="Please enter 2 ~ 64" value="" min="2" max="64" onchange="sizing(this.value)"><button class="setNumber">Set</button></div>
 
